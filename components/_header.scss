@@ -1,0 +1,23 @@
+@import 'variables';
+
+header {
+    background-color: $secondary-color;
+    color: $primary-text-color;
+    padding: 10px 20px;
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+  
+      a {
+        color: $secondary-text-color;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+  
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
