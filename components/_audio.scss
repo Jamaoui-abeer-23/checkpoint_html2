@@ -1,0 +1,37 @@
+// _audio.scss - Styles pour les éléments audio
+
+audio {
+    width: 100%; // Les éléments audio s'ajustent à la largeur du conteneur
+    border-radius: 8px; // Bordures arrondies pour l'élément audio
+    background-color: $primary-color;
+    padding: 10px;
+    margin: 20px 0;
+    display: block;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background-color: $secondary-color; // Change la couleur de la barre de contrôle sur certains navigateurs
+  }
+  
+  audio::-webkit-media-controls-play-button {
+    background-color: $accent-color; // Couleur du bouton de lecture
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  audio::-webkit-media-controls-volume-slider {
+    background-color: $primary-color; // Change la couleur du curseur du volume
+  }
+  
+  audio::-webkit-media-controls-mute-button {
+    background-color: $text-color; // Couleur du bouton de sourdine
+  }
+  
+  .audio-container {
+    max-width: 800px; // Limiter la largeur du conteneur audio
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  

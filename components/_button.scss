@@ -1,13 +1,24 @@
 @import 'variables';
 button {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
     background-color: $accent-color;
-    border: none;
-    padding: 10px 15px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-  
-    &:hover {
-      background-color: $secondary-color;
-    }
+    transform: scale(1.05);
   }
+
+  &:active {
+    background-color: darken($accent-color, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

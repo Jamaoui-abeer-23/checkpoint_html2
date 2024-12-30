@@ -1,7 +1,27 @@
-@import 'variables';
+@import "variables.scss" ;
+
 footer {
-    background-color: $secondary-color;
-    color: $secondary-text-color;
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
+    font-size: 1rem;
+    border-top: 2px solid $secondary-color;
+  
+    p {
+      margin: 0;
+    }
+  
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 10px;
+      display: inline-block;
+  
+      &:hover {
+        color: $accent-color;
+      }
+    }
   }
