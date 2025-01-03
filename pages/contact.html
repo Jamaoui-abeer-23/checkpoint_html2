@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+            <!--  icon   -->
+
     <link rel="icon" href="../assets/phone.png" type="image/x-icon"/>
+
+    <!--  style   -->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+    <header>
+        <img src="../assets/res.png" alt="me" width="200px" height="200px">
+        <nav>
+            <ul>
+                
+                <li><a href= "../pages/Appetizers.html"> Appetizers </a></li>
+                <li><a href="../pages/Main_Courses.html"> Main Courses </a></li>
+                <li><a href="../pages/Desserts.html"> Desserts </a></li>
+                <li><a href="../pages/contact.html"> Contact Us </a></li>
+            </ul>
+        </nav>
+    </header>
     <center>
     <h1>Contact Delicious Bites</h1>
-    <img src="../assets/res.png" alt="me" width="400px" height="400px">
-<p>We would be delighted to have you visit us! Come and enjoy our delicious creations, we can't wait to serve you.</p>
+    
+<p>DROP US A LINE AND WE'LL GET BACK TO YOU</p>
 
 <form action="#" method="POST">
-    <label for="name">Name:</label>
+    <label for="name">First Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="name"> Last Name:</label>
     <input type="text" id="name" name="name" required><br><br>
 
     <label for="email">Email:</label>
@@ -22,8 +40,9 @@
 
     <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+   
 
-    <label for="message">Message:</label>
+    <label for="message">Leave us a message:</label>
     <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
     <button type="submit">Send Message</button>
