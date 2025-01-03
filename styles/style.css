@@ -1,3 +1,16 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a, li {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
