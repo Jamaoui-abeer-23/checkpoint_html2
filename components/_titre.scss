@@ -1,0 +1,21 @@
+
+
+h1 {
+    color: $primary-color ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+h2 {
+    color: $primary-color-dark;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+.section-title 
+{
+    color: $primary-color-light;
+}
+.section-text {
+    color: $secondary-color-dark;
+}

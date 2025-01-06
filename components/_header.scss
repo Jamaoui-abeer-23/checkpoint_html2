@@ -1,16 +1,19 @@
-.links {
+.nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
 }
-a, li{
-    text-decoration: none;
+a{
+    text-decoration-style: none;
+
+   
 }
 .header {
     
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 30%;
     align-items: center;
-
+    
 }

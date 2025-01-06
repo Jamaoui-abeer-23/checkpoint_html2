@@ -1,16 +1,43 @@
-.links {
+.nav-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 20px;
 }
 
-a, li {
-  text-decoration: none;
+a {
+  text-decoration-style: none;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 30%;
   align-items: center;
+}
+
+h1 {
+  color: #D72323;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+h2 {
+  color: #7d1c1c;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.section-title {
+  color: #f54d4d;
+}
+
+.section-text {
+  color: #534d4d;
+}
+
+body {
+  background-color: #ffefef;
 }
