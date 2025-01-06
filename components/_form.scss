@@ -1,0 +1,75 @@
+// Variables for consistency
+$primary-color: #ff6f61; // Accent color for headings and highlights
+$text-color: #000; // Default text color
+$input-border-color: #000; // Input field border color
+$button-border-color: #000;
+$background-color: #fff;
+
+.contact-page {
+  padding: 2rem; // Add spacing around the page
+  background-color: $background-color;
+
+  // Contact Title
+  h1 {
+    font-size: 2.5rem;
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+
+  // Subtitle
+  p {
+    font-size: 1rem;
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  // Form Styling
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // Two-column layout for inputs
+    gap: 1rem; // Spacing between fields
+
+    // Input Fields
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-bottom: 1px solid $input-border-color; // Underline style
+      font-size: 1rem;
+      outline: none;
+
+      &:focus {
+        border-bottom: 2px solid $primary-color; // Highlight on focus
+      }
+    }
+
+    // Textarea Full Width
+    textarea {
+      grid-column: span 2; // Spans two columns
+      resize: none; // Disable resizing
+    }
+
+    // Submit Button
+    button {
+      grid-column: span 2; // Centered full-width button
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $text-color;
+      background-color: transparent;
+      border: 2px solid $button-border-color;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $background-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+}

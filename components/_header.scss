@@ -3,11 +3,7 @@
     flex-direction: row;
     gap: 20px;
 }
-a{
-    text-decoration-style: none;
 
-   
-}
 .header {
     
     display: flex;
@@ -17,3 +13,43 @@ a{
     align-items: center;
     
 }
+
+header a {
+    color: $primary-color-light; // Link color
+    text-decoration: none; // Remove underline
+    font-weight: bold;
+    font-size: 1.1rem; // Slightly larger text for visibility
+    padding: 0.5rem 1rem; // Add spacing around links
+    border: 2px solid transparent; // Border for hover effect
+    border-radius: border radius small; // Rounded corners from your variables
+    transition: all 0.3s ease; // Smooth animation for hover/active states
+
+    &:hover {
+      color: $primary-color-dark; // Change to highlight color
+      background-color: $secondary-color-light; // Add subtle background
+      border-color: $secondary-color; // Highlight border
+      transform: scale(1.05); // Slight enlargement
+    }
+
+    &:active {
+      transform: scale(0.98); // Feedback on click
+      background-color: $secondary-color-dark; // Darker shade for active state
+    }
+  }
+  .animated-text {
+    font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: center;
+  color: #ff6f61; /* Your preferred color */
+  position: relative; /* For precise positioning */
+  animation: verticalScroll 3s infinite ease-in-out; /* Animation properties */
+  
+  }
+  @keyframes verticalScroll {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+      transform: translateY(-20px); /* Move 20px upwards at halfway */
+    }
+  }
