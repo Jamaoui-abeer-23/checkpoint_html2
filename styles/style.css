@@ -307,6 +307,15 @@ footer .subscribe button:hover {
 footer .copyright {
   margin-top: 20px;
   font-size: 15px;
+  color: #3E3636;
+}
+
+.timings {
+  color: #3E3636;
+}
+
+.adress {
+  color: #3E3636;
 }
 
 .logo {
@@ -314,8 +323,99 @@ footer .copyright {
   justify-content: space-between;
   padding-right: 20px;
   padding-left: 20 px;
+  flex-direction: row;
+  align-items: center;
 }
 
 hr {
   border: 0.1px solid #b1b0ae;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #ffefef;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.container .grid-container .menu-item {
+  background-color: #fee9f6;
+  border: 2px solid #C96868;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container .grid-container .menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.container .grid-container .menu-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.container .grid-container .menu-item a h1 {
+  font-size: 1.8rem;
+  color: #D72323;
+  margin: 10px 0;
+}
+.container .grid-container .menu-item img {
+  max-width: 75%;
+  height: 50%;
+  border-bottom: 2px solid #f4f4f4;
+}
+.container .grid-container .menu-item p {
+  padding: 15px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 20px 40px;
+  color: #555;
+}
+p br {
+  margin-bottom: 10px;
+}
+
+.gal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+.gal img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gal img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
