@@ -15,6 +15,10 @@
     border-bottom: none;
 }
 .review .customer-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
     font-size: 1.2em;
     color: #333;
