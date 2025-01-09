@@ -1,0 +1,35 @@
+.review-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+.review:last-child {
+    border-bottom: none;
+}
+.review .customer-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.review .rating {
+    color: gold;
+    font-size: 1.1em;
+}
+.review .comment {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+.review .date {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
