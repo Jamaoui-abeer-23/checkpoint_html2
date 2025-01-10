@@ -23,10 +23,11 @@ form {
 
 /* Style des labels */
 label {
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
-    margin-bottom: 8px;
     display: block;
+    padding-bottom:8px ;
+    font-weight: bold;
 }
 
 /* Style des champs de saisie */

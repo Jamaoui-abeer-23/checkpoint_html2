@@ -67,6 +67,10 @@ h2 {
 }
 
 .section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   color: #f54d4d;
 }
 
@@ -81,7 +85,7 @@ body {
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 10vh;
 }
 
 .flex-container {
@@ -164,10 +168,11 @@ form {
 
 /* Style des labels */
 label {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
-  margin-bottom: 8px;
   display: block;
+  padding-bottom: 8px;
+  font-weight: bold;
 }
 
 /* Style des champs de saisie */
@@ -265,21 +270,29 @@ footer {
   text-align: center;
 }
 
-footer .social-icons {
+.social-icons {
   margin: 20px 0;
 }
 
-footer .social-icons a {
+.social-icons a {
   margin: 0 10px;
   font-size: 24px;
   text-decoration: none;
 }
 
-footer .subscribe {
-  margin-top: 10px;
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
 }
 
-footer .subscribe input[type=email] {
+.subscribe label {
+  font-size: 16px;
+}
+
+.subscribe input[type=email] {
   padding: 10px;
   font-size: 16px;
   width: 250px;
@@ -288,7 +301,7 @@ footer .subscribe input[type=email] {
   margin-right: 10px;
 }
 
-footer .subscribe button {
+.subscribe button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 20px;
@@ -300,31 +313,36 @@ footer .subscribe button {
   cursor: pointer;
 }
 
-footer .subscribe button:hover {
+.subscribe button:hover {
   background-color: #7d1c1c;
 }
 
-footer .copyright {
+.copyright {
   margin-top: 20px;
   font-size: 15px;
   color: #3E3636;
 }
 
 .timings {
-  color: #3E3636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .adress {
-  color: #3E3636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo {
+.logo-container {
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
   padding-left: 20 px;
   flex-direction: row;
   align-items: center;
+  color: #3E3636;
 }
 
 hr {
@@ -408,7 +426,7 @@ p br {
   padding: 20px;
 }
 .gal img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
   display: block;
   border-radius: 8px;

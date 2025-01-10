@@ -6,20 +6,28 @@ footer {
     padding: 20px;
     text-align: center;
 }
-footer .social-icons {
+ .social-icons {
     margin: 20px 0;
 }
-footer .social-icons a {
+.social-icons a {
     
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
 }
 
-footer .subscribe {
-    margin-top: 10px;
+.subscribe {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   
 }
-footer .subscribe input[type="email"] {
+.subscribe label {
+    font-size: 16px;
+}
+.subscribe input[type="email"] {
     padding: 10px;
     font-size: 16px;
     width: 250px;
@@ -27,7 +35,7 @@ footer .subscribe input[type="email"] {
     border-radius: 5px;
     margin-right: 10px;
 }
-footer .subscribe button {
+.subscribe button {
     width: fit-content;
     padding: 10px 20px;
     font-size: 16px;
@@ -37,30 +45,37 @@ footer .subscribe button {
     color: #fff;
     cursor: pointer;
 }
-footer .subscribe button:hover {
+.subscribe button:hover {
     background-color:  #7d1c1c;
 }
-footer .copyright {
+ .copyright {
     margin-top: 20px;
     font-size: 15px;
     color: #3E3636;
 }
 .timings {
-    color : #3E3636;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
     
     
 }
 .adress { 
-    color : #3E3636 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-.logo {
+.logo-container {
     display: flex;
     justify-content: space-between;
     padding-right: 20px ;
     padding-left: 20 px ;
     flex-direction: row;
     align-items: center;
+    
+    color : #3E3636 ;
 }
 hr {
     border: 0.1px solid #b1b0ae	 ;
