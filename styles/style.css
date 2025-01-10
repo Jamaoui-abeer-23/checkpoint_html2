@@ -80,6 +80,7 @@ h2 {
 
 body {
   margin: 0;
+  width: 100%;
   height: 100%;
   background-color: #ffefef;
 }
@@ -436,4 +437,28 @@ p br {
 .gal img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.img-fixed {
+  position: fixed;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.img-fixed .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Black with 30% transparency */
+}
+
+.img-fixed img {
+  width: 100%;
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
